@@ -11,7 +11,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 // const mongoURI = process.env.MONGO_URI;
 // const jwtSecret = process.env.JWT_SECRET || 'mySecretKey'; // Use fallback for local dev
-const x = "mongodb+srv://pawansharma02020200:RcHVi5BZEZ4sys2j@vms.tqk8k.mongodb.net/?retryWrites=true&w=majority&appName=VMS";
+const x = `mongodb+srv://pawansharma02020200:${secretConnection}@vms.tqk8k.mongodb.net/?retryWrites=true&w=majority&appName=VMS`;
 
 const app = express();
 //Middleware
