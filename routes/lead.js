@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken'); // For JWT tokens
 const User = require('../models/leads'); // Your user model
 const router = express.Router();
 
-// JWT secret key (ensure this is stored securely, e.g., in a .env file)
+// JWT secret key (ensure this is stored securely, e.g., in a .
 const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key';
 
 // Login route
