@@ -21,13 +21,10 @@ app.use(cors());
 // MongoDB connection string (Use your Atlas connection string here)
 const mongoURI = x;
 
-// Connect to MongoDB , useUnifiedTopology: true, , {useNewUrlParser: true}
+// Connection to database mongoDb Atlas
 mongoose.connect(mongoURI,{useNewUrlParser: true ,useUnifiedTopology: true})
 .then(() => console.log('MongoDB connected successfully'))
 .catch((err) => console.error('MongoDB connection error:', err));
-
-// const user = require('./models/volunteer');
-
 
 // Routes
 app.use('/register', volunteerRoutes);
