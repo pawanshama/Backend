@@ -11,3 +11,7 @@ cd Backend
 npm install
 npm install mongoose
 npm install express
+### start backend
+```
+npm start
+```
